@@ -1,0 +1,9 @@
+Flask
+Flask-CORS
+Werkzeug
+pdf2image
+openai
+python-dotenv
+boto3
+textractor
+gunicorn
