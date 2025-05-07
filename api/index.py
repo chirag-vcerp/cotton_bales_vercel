@@ -187,6 +187,8 @@ def extract_text_from_textract(response):
         if item['BlockType'] == 'LINE'
     )
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+# Required for Vercel
+def handler(environ, start_response):
+    return app.wsgi_app(environ, start_response)
+
     
